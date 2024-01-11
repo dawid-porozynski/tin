@@ -1,0 +1,37 @@
+body{
+    background-color: grey;
+}
+.main{
+    display: grid;
+    place-items: center;
+
+}
+ .bottom{
+    background-color: white;
+    width: 500px;
+    height: 200px;
+ }
+.top{
+    background-color: aqua;
+    width: 500px;
+    height: 100px;
+}
+label{
+      display:block;
+  
+}
+
+input{
+    width: 100px;
+    height: 50px;
+}
+.equals{
+    width: 100px;
+    margin-top: 20px;
+}
+select{
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
