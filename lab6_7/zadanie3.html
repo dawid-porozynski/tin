@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>zadanie3</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<style>
+    th{
+        margin: 10px;
+        width: 100px;
+    }
+    td{
+        width: 100px;
+        margin: 10px;
+    }
+    tr{
+        width: 100;
+        margin: 10px;
+    }
+</style>
+<body>
+    <div class="container"></div>
+    <script>
+        const auta = [{rok:"2012",przebieg:20000,cene_wjsciowa:"20000",cena_koncowa:"201222"},
+                    {rok:"2018",przebieg:30000,cene_wjsciowa:"20000",cena_koncowa:"234222"} ,
+                    {rok:"2022",przebieg:50000,cene_wjsciowa:"20000",cena_koncowa:"500022"} ];
+
+                    const tabela = document.createElement('table');
+
+const wierszNaglowka = tabela.insertRow();
+for (const klucz in auta[0]) {
+    const th = document.createElement('th');
+    th.textContent = klucz.charAt(0).toUpperCase() + klucz.slice(1); 
+    wierszNaglowka.appendChild(th);
+}
+
+auta.forEach(auto => {
+    const wiersz = tabela.insertRow();
+    for (const klucz in auto) {
+        const komorka = wiersz.insertCell();
+        komorka.textContent = auto[klucz];
+    }
+});
+
+
+document.body.appendChild(tabela); 
+    </script>
+</body>
+</html>
