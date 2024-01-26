@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+header > ul {
+    margin-left: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+header li a {
+    color: blue;
+    font-size: 20px;
+}
+
+.child-container {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 10rem;
+}
+
+.child-container li {
+    padding: 5px 10px;
+    border-bottom: 1px solid #aba2a2;
+}
+
+.parent:hover .child-container {
+    display: block;
+}
+
+
+
+.shadow {
+    box-shadow: 0 0 3px #b6a7a7;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #EEEEEE;
+}
+
+@media (max-width: 1000px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+main span {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+fieldset {
+    border: none;
+    background-color: #DDDDDD;
+}
+
+table {
+    width: 50%;
+    text-align: center;
+}
+
+p {
+    color: darkgrey;
+}
+
+td {
+    border-bottom: 1px solid #DDDDDD;
+}
+
+img {
+    width: 100%;
+}
+
+select, textarea, fieldset div:first-child input {
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 80px;
+}
+
+footer span {
+    display: flex;
+    color: darkgrey;
+    align-items: center;
+    margin: 10px 10px;
+    padding-left: 10px;
+}
+
+footer span:nth-child(n+2) {
+    border-left: solid 1px #DDDDDD;
+}
